@@ -1,6 +1,6 @@
 // API Configuration
-const API_BASE_URL = 'http://localhost:8000/api';
-const CSRF_URL = 'http://localhost:8000/sanctum/csrf-cookie';
+const API_BASE_URL = 'https://library-management-system-production-1a71.up.railway.app/api';
+const CSRF_URL = 'https://library-management-system-production-1a71.up.railway.app/sanctum/csrf-cookie';
 // Common function to display errors
 function showError(message, elementId = 'error-message') {
     const errorElement = document.getElementById(elementId);
@@ -184,7 +184,7 @@ async function logoutUser() {
             logoutBtn.innerHTML = 'Logging out...';
         }
         // Send logout request to backend
-        await fetch('http://localhost:8000/api/auth/logout', {
+        await fetch('https://library-management-system-production-1a71.up.railway.app/api/auth/logout', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
