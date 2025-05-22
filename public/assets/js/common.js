@@ -1,6 +1,6 @@
 // Common functions and utilities
-const API_BASE_URL = 'http://localhost:8000/api';
-const CSRF_URL = 'http://localhost:8000/sanctum/csrf-cookie';
+const API_BASE_URL = 'https://library-management-system-production-1a71.up.railway.app/api';
+const CSRF_URL = 'https://library-management-system-production-1a71.up.railway.app/sanctum/csrf-cookie';
 
 // Check authentication status
 function checkAuth() {
